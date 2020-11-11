@@ -7,7 +7,7 @@ public class Main {
         int[] arr = {2,-50,15,68,0,15,51};
 
         Sorter sorter = new InsertSorter();
-        sorter.sort(arr);
+        arr = sorter.sort(arr);
 
         System.out.println(Arrays.toString(arr));
     }

@@ -2,7 +2,7 @@ package main;
 
 public class InsertSorter implements Sorter{
     @Override
-    public void sort(int[] arr) {
+    public int[] sort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int k = arr[i];
             int j = i - 1;
@@ -12,5 +12,6 @@ public class InsertSorter implements Sorter{
             }
             arr[j+1] = k;
         }
+        return arr;
     }
 }
