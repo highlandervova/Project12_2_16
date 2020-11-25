@@ -8,7 +8,7 @@ public class MinMaxSorter implements Sorter{
 
          int[] tmp = new int[arr.length];
 
-         for (int i = 0; i < arr.length; i++) {
+         for (int i = 0; i <  arr.length; i++) {
              k=arr[0];
              j=0;
                 for (int n = 1; n < arr.length; n++) {
@@ -17,6 +17,8 @@ public class MinMaxSorter implements Sorter{
                     j = n;
                  }
                 }
+
+//comment
             tmp[i]=k;
             arr[j]=Integer.MAX_VALUE;
             }
